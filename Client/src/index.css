@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navbar-height: 6rem;
+    --banner-height: calc(100vh - var(--navbar-height));
+  }
+}
+
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+@layer components {
+  .icon {
+    height: 1.25rem;
+    aspect-ratio: 1/ 1;
+  }
+  .icon-sm {
+    height: 1rem;
+  }
+  .icon-lg {
+    height: 1.5rem;
+  }
+}
